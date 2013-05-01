@@ -1,0 +1,1269 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------
+| application.css
+| application name v1.0
+|
+| This file rolls up the main styles for the entire application. You'll need to
+| include the IE-specific and print stylesheets, as well as the display-size-
+| specific styles separately in your markup. See the readme for an explanation
+| of the directory organization.
+------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* =============================================================================
+** The 1140px Grid V2 by Andy Taylor
+** http://cssgrid.net
+** http://www.twitter.com/andytlr
+** http://www.andytlr.com
+** ========================================================================== */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px;
+}
+
+.row .onecol {
+  width: 4.85%;
+}
+
+.row .twocol {
+  width: 13.45%;
+}
+
+.row .threecol {
+  width: 22.05%;
+}
+
+.row .fourcol {
+  width: 30.75%;
+}
+
+.row .fivecol {
+  width: 39.45%;
+}
+
+.row .sixcol {
+  width: 48%;
+}
+
+.row .sevencol {
+  width: 56.75%;
+}
+
+.row .eightcol {
+  width: 65.4%;
+}
+
+.row .ninecol {
+  width: 74.05%;
+}
+
+.row .tencol {
+  width: 82.7%;
+}
+
+.row .elevencol {
+  width: 91.35%;
+}
+
+.row .twelvecol {
+  width: 100%;
+  float: left;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .row, body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.alerts .message.success:before, .alerts .message.warning:before, .alerts .message.error:before {
+  line-height: 1em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.alerts .message.success:before {
+  content: "\f00c";
+}
+
+.alerts .message.warning:before {
+  content: "\f069";
+}
+
+.alerts .message.error:before {
+  content: "\f06a";
+}
+
+/*-----[ colors ]---------------------------------------------------------------
+| Variables defining the colors to be used throughout the application.
+*/
+/*----------[ table of contents ]-----------------------------------------------
+| palette
+| backgrounds and borders
+| text
+| forms
+*/
+/*----------[ palette ]---------------------------------------------------------
+| Use color names you can easily remember here, like "light-blue". Doing this
+| makes it easier for you to tweak the exact shade of "light-blue" you're using
+| transparently.
+*/
+/*----------[ backgrounds and borders ]-----------------------------------------
+| From this point on, we create semantic variables and assign our color values
+| to them. Then in the rest of our styles, we refer to these semantic color
+| values like so:
+|
+|   body
+|   {
+|      background-color: $page-bg;
+|      color: $body-text-color;
+|   }
+|
+| By adding this extra layer of abstraction, we can swap out our
+| page background or link color—or change the palette entirely—in just one
+| place without a lot of tedious search-and-replace.
+*/
+/*----------[ text ]------------------------------------------------------------
+*/
+/*----------[ forms ]-----------------------------------------------------------
+*/
+/*-----[ typography ]-----------------------------------------------------------
+*/
+/*-----[ grid ]-----------------------------------------------------------------
+| Style specifying the dimensions of the basic page grid and other common
+| measures.
+*/
+/*-----[ mixins ]---------------------------------------------------------------
+| Define mixins and reusable CSS rulesets here. An example:
+|
+|   $silver-sand: #c1c0be;
+|   $content-inner-bg: white;
+|
+|   @mixin content-inner-border
+|   {
+|     @include border-radius(5px);
+|   }
+|
+|   @mixin content-shadow
+|   {
+|     @include single-box-shadow($silver-sand, 0, 3px, 5px);
+|   }
+|
+|   @mixin content-inner-box
+|   {
+|     @include content-inner-border;
+|     @include content-shadow;
+|     background-color: $content-inner-bg;
+|   }
+*/
+/*
+** Also offer clearfix as a mixin for greater flexibility.
+** Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/>
+*/
+/*----------[ typography ]------------------------------------------------------
+| Common font-size/line-height combinations.
+*/
+/*----------[ photos/images ]---------------------------------------------------
+*/
+/*
+** Mixin for including a retina image as a background.
+**
+** Parameters:
+**  $image-name   : The filename of the image without the extension.
+**  $image-width  : The width of the 1x image.
+**  $image-height : The height of the 1x image.
+**  $type         : The extension of the image file. Defaults to 'png.'
+**  $bg-color     : The background color. Defaults to 'transparent.'
+**  $bg-repeat    : The background-repeat setting. Defaults to 'no-repeat.'
+**  $bg-pos-x     : The horizontal position of the background. Defaults to 'center.'
+**  $bg-pos-y     : The vertical position of the background. Defaults to 'center.'
+**
+*/
+/*-----[ foundation ]-----------------------------------------------------------
+| Reusable content styles. Define your application-wide styles, like links,
+| headers, body text, clearfix, etc. here. See the readme for information on
+| recommended rule order.
+*/
+/*----------[ table of contents ]-----------------------------------------------
+| tags
+| non-semantic styles
+| icon fonts
+*/
+/*----------[ tags ]------------------------------------------------------------
+*/
+a {
+  color: #1673a1;
+}
+a:visited {
+  color: #4a1a2b;
+}
+a:hover, a:active {
+  color: #105374;
+}
+
+blockquote, dl, ol, p, pre, table, ul {
+  margin: 24px 0;
+}
+
+blockquote {
+  margin-left: 20px;
+  color: gray;
+}
+
+body {
+  background-color: white;
+  color: #444444;
+  font-family: Avenir, "DejaVu Sans", "Bitstream Vera Sans", Tahoma, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  /*
+  ** Turn off automatic text resizing in MobileSafari for iPhone. This assumes
+  ** that you've been mindful of readability and have already chosen the text
+  ** size you feel is effective at those screen sizes. REMOVE IT if you want
+  ** iPhone to automatically resize the text.
+  */
+}
+@media (max-width: 500px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+caption {
+  font-style: italic;
+}
+
+dt {
+  font-style: italic;
+}
+
+dd {
+  margin: 0 0 24px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 42px;
+  line-height: 48px;
+  color: #9fad00;
+}
+
+h2 {
+  margin: 24px 0 12px;
+  color: #ff8400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  margin: 18px 0 0;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+h1, h2, h3 {
+  text-rendering: optimizeLegibility;
+}
+h1 + blockquote, h1 + dl, h1 + ol, h1 + ul, h1 + p, h2 + blockquote, h2 + dl, h2 + ol, h2 + ul, h2 + p, h3 + blockquote, h3 + dl, h3 + ol, h3 + ul, h3 + p {
+  margin-top: 0;
+}
+
+hr {
+  margin: 11.9px auto 12px;
+  border-style: none;
+  height: 1px;
+  background-color: black;
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+dl dl, ol ol, ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+pre {
+  padding: 12px 10px;
+  overflow: auto;
+  background-color: #f0f0f0;
+}
+
+sub, sup {
+  font-size: 80%;
+  /*
+  ** A non-zero line-height on a sub or sup element will alter the line-height
+  ** of your paragraph text. To keep your vertical rhythm nice and smooth, set
+  ** the line-height on your subs and sups to 0.
+  */
+  line-height: 0;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+
+table {
+  width: 100%;
+}
+
+table, thead th {
+  border-bottom: 2px solid #d6d6d6;
+}
+
+td, th {
+  padding: 6px 0;
+  padding-right: 20px;
+}
+td:first-of-type, th:first-of-type {
+  padding-left: 5px;
+}
+td:last-of-type, th:last-of-type {
+  padding-right: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+tbody th, td {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+/*----------[ non-semantic styles ]---------------------------------------------
+** Purely presentational styles with non-semantic names.
+*/
+.align-center {
+  margin: 0 auto;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+/* Clearfix style from <http://nicolasgallagher.com/micro-clearfix-hack/> */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+span.keep-together {
+  white-space: nowrap;
+}
+
+.reset {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  font-size: 0;
+}
+
+.spacer {
+  padding: 0;
+  height: 12px;
+  font-size: 0;
+}
+
+/*----------[ icon fonts ]------------------------------------------------------
+*/
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-----[ page ]-----------------------------------------------------------------
+| Top-level styles for content. Otherwise unqualified styles should go here.
+*/
+#page .annotation,
+#page .fine-print,
+#page .form-help {
+  color: gray;
+  font-weight: normal;
+  font-style: italic;
+}
+#page .fine-print, #page .form-help {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+#page .subtitle {
+  font-weight: normal;
+}
+#page .subheading {
+  font-weight: bold;
+}
+
+/*-----[ forms ]----------------------------------------------------------------
+| Global form and form element styles. Feature-specific form styles should be
+| co-located with other feature-specific styles.
+*/
+/*----------[ table of contents ]-----------------------------------------------
+| text and password fields, textareas
+| buttons and checkboxes
+| form layout
+| validation
+| datepicker
+*/
+/*----------[ text and password fields, textareas ]-----------------------------
+*/
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea {
+  margin: 0;
+  border: 1px solid black;
+  padding: 4.4px;
+  background-color: white;
+  font-family: Avenir, "DejaVu Sans", "Bitstream Vera Sans", Tahoma, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+input[type=email][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=url][disabled],
+select[disabled],
+textarea[disabled] {
+  border-color: silver !important;
+  color: silver !important;
+  cursor: default !important;
+}
+
+input[type=text].small {
+  width: 50px;
+  margin-right: 0.33em;
+}
+
+/*----------[ buttons and checkboxes]-------------------------------------------
+*/
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: baseline;
+}
+
+input[type=checkbox] {
+  border: 1px solid gray;
+  background-color: white;
+}
+
+/*
+** Use the sassy-buttons gem to generate matte rounded-rectangle buttons with
+** gradients and hover styles, in the following colors:
+**    main buttons: orange,
+**    disabled buttons: grey,
+**    buttons for destructive actions: red
+**
+** See
+**    http://jaredhardy.com/sassy-buttons/ and
+**    https://github.com/jhardy/Sassy-Buttons
+** for more details.
+*/
+input[type=submit],
+input[type=button],
+button,
+a.button {
+  font-size: 15px;
+  padding: 3px 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 18px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #f07c00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa23d), color-stop(70%, #f07c00));
+  background: -webkit-linear-gradient(#ffa23d, #f07c00 70%);
+  background: -moz-linear-gradient(#ffa23d, #f07c00 70%);
+  background: -o-linear-gradient(#ffa23d, #f07c00 70%);
+  background: linear-gradient(#ffa23d, #f07c00 70%);
+  -webkit-box-shadow: #ffc68a 0 1px 0 inset;
+  -moz-box-shadow: #ffc68a 0 1px 0 inset;
+  box-shadow: #ffc68a 0 1px 0 inset;
+  border: 1px solid #d66f00;
+  color: white;
+  font-family: Avenir, "DejaVu Sans", "Bitstream Vera Sans", Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover,
+a.button:hover {
+  text-decoration: none;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover,
+a.button:hover {
+  background-color: #d66f00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #ff9524), color-stop(75%, #d66f00));
+  background: -webkit-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: -moz-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: -o-linear-gradient(#ff9524 3%, #d66f00 75%);
+  background: linear-gradient(#ff9524 3%, #d66f00 75%);
+}
+input[type=submit]:active,
+input[type=button]:active,
+button:active,
+a.button:active {
+  -webkit-box-shadow: #c76700 0 1px 2px inset;
+  -moz-box-shadow: #c76700 0 1px 2px inset;
+  box-shadow: #c76700 0 1px 2px inset;
+}
+input[type=submit].disabled, input[type=submit][disabled],
+input[type=button].disabled,
+input[type=button][disabled],
+button.disabled,
+button[disabled],
+a.button.disabled,
+a.button[disabled] {
+  opacity: 0.6;
+  background: #f07c00;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input[type=submit]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+button::-moz-focus-inner,
+a.button::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+input[type=submit].destructive,
+input[type=button].destructive,
+button.destructive,
+a.button.destructive {
+  font-size: 15px;
+  padding: 3px 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 18px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #e53b19;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ed755d), color-stop(70%, #e53b19));
+  background: -webkit-linear-gradient(#ed755d, #e53b19 70%);
+  background: -moz-linear-gradient(#ed755d, #e53b19 70%);
+  background: -o-linear-gradient(#ed755d, #e53b19 70%);
+  background: linear-gradient(#ed755d, #e53b19 70%);
+  -webkit-box-shadow: #f5b0a2 0 1px 0 inset;
+  -moz-box-shadow: #f5b0a2 0 1px 0 inset;
+  box-shadow: #f5b0a2 0 1px 0 inset;
+  border: 1px solid #ce3516;
+  color: white;
+}
+input[type=submit].destructive:hover,
+input[type=button].destructive:hover,
+button.destructive:hover,
+a.button.destructive:hover {
+  text-decoration: none;
+}
+input[type=submit].destructive:hover,
+input[type=button].destructive:hover,
+button.destructive:hover,
+a.button.destructive:hover {
+  background-color: #ce3516;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #eb6246), color-stop(75%, #ce3516));
+  background: -webkit-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: -moz-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: -o-linear-gradient(#eb6246 3%, #ce3516 75%);
+  background: linear-gradient(#eb6246 3%, #ce3516 75%);
+}
+input[type=submit].destructive:active,
+input[type=button].destructive:active,
+button.destructive:active,
+a.button.destructive:active {
+  -webkit-box-shadow: #c03215 0 1px 2px inset;
+  -moz-box-shadow: #c03215 0 1px 2px inset;
+  box-shadow: #c03215 0 1px 2px inset;
+}
+input[type=submit].destructive.disabled, input[type=submit].destructive[disabled],
+input[type=button].destructive.disabled,
+input[type=button].destructive[disabled],
+button.destructive.disabled,
+button.destructive[disabled],
+a.button.destructive.disabled,
+a.button.destructive[disabled] {
+  opacity: 0.6;
+  background: #e53b19;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input[type=submit].destructive::-moz-focus-inner,
+input[type=button].destructive::-moz-focus-inner,
+button.destructive::-moz-focus-inner,
+a.button.destructive::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+input[type=submit][disabled],
+input[type=button][disabled],
+button[disabled],
+a.button[disabled] {
+  font-size: 15px;
+  padding: 3px 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 18px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #c8c8c8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(70%, #c8c8c8));
+  background: -webkit-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: -moz-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: -o-linear-gradient(#eeeeee, #c8c8c8 70%);
+  background: linear-gradient(#eeeeee, #c8c8c8 70%);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #bbbbbb;
+  color: #8d8d8d;
+  cursor: default !important;
+}
+input[type=submit][disabled]::-moz-focus-inner,
+input[type=button][disabled]::-moz-focus-inner,
+button[disabled]::-moz-focus-inner,
+a.button[disabled]::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+.button-bar {
+  margin: 24px 0;
+  padding: 0;
+}
+
+.button-bar input[type=submit],
+.button-bar input[type=button],
+.button-bar button,
+.button-bar > a {
+  float: left;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.button-bar > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/*----------[ form layout ]-----------------------------------------------------
+*/
+/*---------------[ forms in tables ]--------------------------------------------
+*/
+table.form {
+  margin-top: 0;
+}
+table.form, table.form th, table.form td {
+  border-style: none;
+}
+table.form .section-heading th {
+  color: #ff8400;
+}
+table.form .field-label {
+  padding-right: 20px;
+  vertical-align: top;
+  text-align: right;
+  font-weight: normal;
+}
+table.form .field, table.form .button-bar {
+  padding-left: 0;
+}
+
+.stacked label,
+.radio-group label,
+.checkbox-group label {
+  display: block;
+}
+
+/*---------------[ stacked forms ]----------------------------------------------
+*/
+.stacked {
+  margin-left: -5px;
+}
+.stacked .section-heading {
+  font-weight: bold;
+  color: #ff8400;
+}
+.stacked .field > label:first-of-type {
+  margin-top: 12px;
+}
+.stacked .field, .stacked .section-heading, .stacked .button-bar {
+  padding-left: 5px;
+}
+
+/*----------[ validation ]------------------------------------------------------
+*/
+.error, .error td, .error th {
+  background-color: #fcebe7;
+}
+.error label, .error .form-help {
+  color: #b72f14;
+}
+.error label {
+  font-weight: bold;
+}
+.error input[type=email],
+.error input[type=password],
+.error input[type=search],
+.error input[type=tel],
+.error input[type=text],
+.error input[type=url],
+.error select,
+.error textarea {
+  border-color: #a02911;
+}
+.error ul.error-explanation {
+  margin: 6px;
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #b72f14;
+}
+
+/*----------[ datepicker ]------------------------------------------------------
+*/
+input.date,
+img.ui-datepicker-trigger {
+  vertical-align: middle;
+}
+
+.ui-datepicker {
+  font-size: 15px !important;
+}
+
+/*----------[ alerts ]----------------------------------------------------------
+*/
+.alerts {
+  margin: 0;
+  list-style-type: none;
+}
+.alerts .message {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  padding-left: 40px;
+}
+.alerts .message:before {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin-left: -30px;
+  margin-right: 10px;
+  width: 20px;
+}
+.alerts .message.success {
+  background-color: #f3f8be;
+  color: #919e00;
+}
+.alerts .message.warning {
+  background-color: #fff3c2;
+  color: #cca300;
+}
+.alerts .message.error {
+  background-color: #fcebe7;
+  color: #b72f14;
+}
+
+/*----------[ pagination ]------------------------------------------------------
+| Styles for Flickr-style pagination.
+*/
+.pagination {
+  margin-top: 12px;
+  white-space-collapse: discard;
+}
+.pagination .first, .pagination .prev, .pagination .page, .pagination .next, .pagination .last {
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #e8e8e8;
+}
+.pagination .first a, .pagination .prev a, .pagination .page a, .pagination .next a, .pagination .last a {
+  display: block;
+  text-decoration: none;
+}
+.pagination .first a, .pagination .first.current, .pagination .first.gap, .pagination .prev a, .pagination .prev.current, .pagination .prev.gap, .pagination .page a, .pagination .page.current, .pagination .page.gap, .pagination .next a, .pagination .next.current, .pagination .next.gap, .pagination .last a, .pagination .last.current, .pagination .last.gap {
+  padding: 6px 10px;
+  background-color: transparent;
+}
+
+/*-----[ header ]---------------------------------------------------------------
+| Common page header styles.
+*/
+/*-----[ footer ]---------------------------------------------------------------
+| Common page footer styles.
+*/
+/*-----[ documentation ]--------------------------------------------------------
+| Styles for the documentation pages. See _feature-1.scss for more details on
+| how feature-specific styles should be organized.
+*/
+.documentation #page {
+  padding: 24px 20px;
+}
+.documentation #page header {
+  margin-bottom: 24px;
+}
+.documentation #page p:last-of-type,
+.documentation #page dl:last-of-type,
+.documentation #page ol:last-of-type,
+.documentation #page ul:last-of-type {
+  margin-bottom: 0;
+}
+.documentation #page #about, .documentation #page #resources {
+  margin-bottom: 48px;
+}
+.documentation #page footer {
+  color: gray;
+  font-style: italic;
+}
+
+/*
+** We've elected to always put media queries inline, so that they're near
+** the original style definition for easy locating later on.
+*/
+@media (min-width: 480px) {
+  .documentation #page {
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  .documentation #page {
+    margin: 50px auto;
+    border: 2px solid silver;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .documentation #page {
+    max-width: 900px;
+  }
+  .documentation #about, .documentation #resources {
+    float: left;
+    margin-bottom: 0;
+  }
+  .documentation #about {
+    margin-right: 3%;
+    width: 67%;
+  }
+  .documentation #resources {
+    width: 30%;
+  }
+  .documentation footer {
+    clear: both;
+  }
+}
+/*-----[ login ]----------------------------------------------------------------
+| Styles for the login page. See _feature-1.scss for more details on how
+| feature-specific styles should be organized.
+*/
+#login #page {
+  padding: 24px 20px;
+}
+#login #page p:last-of-type,
+#login #page dl:last-of-type,
+#login #page ol:last-of-type,
+#login #page ul:last-of-type {
+  margin-bottom: 0;
+}
+#login #page form {
+  margin-bottom: 48px;
+}
+#login #page input[type=email],
+#login #page input[type=password] {
+  width: 230px;
+}
+#login #page footer {
+  color: gray;
+  font-style: italic;
+}
+
+@media (min-width: 480px) {
+  #login #page {
+    max-width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  #login #page {
+    margin: 50px auto;
+    border: 2px solid silver;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+/*-----[ style guide ]----------------------------------------------------------
+*/
+#style-guide #page {
+  padding: 24px 20px;
+}
+#style-guide #examples > section {
+  margin-top: 48px;
+}
+#style-guide #examples > section > h1 {
+  margin-bottom: 23px;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 6px;
+  color: #e67700;
+}
+#style-guide #examples .explanation h2 {
+  margin: 0;
+  color: #cca300;
+}
+#style-guide #examples .explanation p {
+  margin-top: 0;
+}
+#style-guide #examples .columns h2 {
+  margin-top: 12px;
+}
+#style-guide .colors table {
+  margin-top: 0;
+}
+#style-guide .colors .swatch {
+  padding: 0;
+  width: 40px;
+}
+#style-guide .colors .swatch.eggplant-purple {
+  background-color: #4a1a2b;
+}
+#style-guide .colors .swatch.teal {
+  background-color: #207861;
+}
+#style-guide .colors .swatch.leaf-green {
+  background-color: #9fad00;
+}
+#style-guide .colors .swatch.bright-yellow {
+  background-color: #ffcc00;
+}
+#style-guide .colors .swatch.orange {
+  background-color: #ff8400;
+}
+#style-guide .colors .swatch.blue {
+  background-color: #1673a1;
+}
+#style-guide .colors .swatch.red {
+  background-color: #e53b19;
+}
+#style-guide .colors .swatch.charcoal {
+  background-color: #444444;
+}
+#style-guide .colors .swatch.grey {
+  background-color: gray;
+}
+#style-guide .colors .swatch.silver {
+  background-color: silver;
+}
+#style-guide .colors .swatch.greyish-white {
+  background-color: #f0f0f0;
+}
+#style-guide .colors .hex-code {
+  padding-left: 10px;
+}
+#style-guide .tables .quantity, #style-guide .tables .price {
+  text-align: right;
+}
+#style-guide .tables table {
+  margin-top: 0;
+}
+#style-guide .tables tr.total {
+  font-weight: bold;
+}
+#style-guide .forms input[type=email],
+#style-guide .forms input[type=password],
+#style-guide .forms input[type=search],
+#style-guide .forms input[type=tel],
+#style-guide .forms input[type=text],
+#style-guide .forms input[type=url],
+#style-guide .forms select {
+  width: 200px;
+}
+#style-guide .forms input[type=email].large,
+#style-guide .forms input[type=password].large,
+#style-guide .forms input[type=search].large,
+#style-guide .forms input[type=tel].large,
+#style-guide .forms input[type=text].large,
+#style-guide .forms input[type=url].large,
+#style-guide .forms select.large {
+  width: 250px;
+}
+#style-guide footer {
+  margin-top: 24px;
+  font-style: italic;
+  color: gray;
+}
+
+@media (min-width: 480px) {
+  #style-guide #intro, #style-guide .explanation, #style-guide .example {
+    max-width: 600px;
+  }
+}
+@media (min-width: 768px) {
+  #style-guide #examples .columns .column {
+    float: left;
+    margin-right: 2%;
+    width: 32%;
+  }
+  #style-guide #examples .columns .column:last-of-type {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  #style-guide #examples .explanation, #style-guide #examples .example {
+    float: left;
+    margin-bottom: 24px;
+  }
+  #style-guide #examples .explanation {
+    clear: left;
+    margin-right: 3%;
+    width: 32%;
+  }
+  #style-guide #examples .example {
+    width: 65%;
+    max-width: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  #style-guide #page {
+    max-width: 1200px;
+  }
+}
+/*-----[ feature 1 ]------------------------------------------------------------
+| Styles for an individual feature, page or section of the application/site.
+| Create a new stylesheet per feature or section. If the feature-specific styles
+| are too many to practically be in one file, create a new directory containing
+| styles for that feature:
+|
+|   _feature-1.scss
+|   feature-2/
+|     _sub-feature-1.scss
+|     _sub-feature-2.scss
+|   _feature-3.scss
+*/
